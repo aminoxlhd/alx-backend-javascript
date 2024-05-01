@@ -32,5 +32,14 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-const result: string = printTeacher("John", "Doe");
-console.log(result);
+class StudentClass implements StudentClassInterface {
+  constructor(private firstName: string, private lastName: string) {}
+
+  workOnHomework(): string {
+    return "Currently working";
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
