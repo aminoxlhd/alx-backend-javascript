@@ -17,3 +17,5 @@ namespace Subjects {
     }
   }
 }
+
+export const java = new Java();

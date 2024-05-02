@@ -15,5 +15,7 @@ namespace Subjects {
         return "No available teacher";
       }
     }
-  }
+  }  
 }
+
+export const cpp = new Cpp();
