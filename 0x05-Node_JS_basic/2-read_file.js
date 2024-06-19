@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 
-function countStudents (path) {
-  return fs.readFile(path, 'utf-8')
+function countStudents (filePath) {
+  return fs.readFile(filePath, 'utf-8')
     .then((data) => {
       const students = [];
       const fields = {};
